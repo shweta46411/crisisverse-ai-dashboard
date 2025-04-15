@@ -1,0 +1,12 @@
+streamlit
+pandas
+numpy
+plotly
+folium
+streamlit-folium
+geopandas
+scikit-learn
+transformers
+openai>=1.0.0
+transformers
+torch
