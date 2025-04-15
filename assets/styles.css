@@ -1,0 +1,56 @@
+/* ===== CrisisVerse AI Custom Theme ===== */
+
+body {
+    font-family: "Inter", sans-serif;
+    background-color: #f5f7fa;
+}
+
+/* Metric boxes spacing */
+[data-testid="metric-container"] {
+    padding: 16px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 1px solid #e1e4e8;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+/* Success and info boxes */
+.stAlert {
+    border-radius: 10px !important;
+}
+
+/* Headings */
+h1, h2, h3 {
+    color: #1f2937;
+    font-weight: 700;
+}
+
+/* Radio button sidebar */
+section[data-testid="stSidebar"] .stRadio > label {
+    font-weight: 600;
+    font-size: 15px;
+    padding: 6px;
+}
+
+/* Buttons */
+.stButton > button {
+    border-radius: 8px;
+    font-weight: 600;
+    background-color: #2563eb;
+    color: white;
+    padding: 0.5em 1.2em;
+    transition: 0.2s ease-in-out;
+}
+
+.stButton > button:hover {
+    background-color: #1d4ed8;
+}
+
+/* Selectbox and sliders */
+.stSelectbox div[data-baseweb="select"] {
+    border-radius: 8px;
+}
+
+.css-1cpxqw2 {
+    padding-top: 8px;
+}

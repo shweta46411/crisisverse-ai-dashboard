@@ -1,0 +1,20 @@
+import pandas as pd
+from modules.data_cleaner import generate_zone_bounding_boxes, assign_zones_to_df
+
+# Load original data
+sensor_df = pd.read_csv("data/essential_data/sensor_readings.csv")
+tweets_df = pd.read_csv("data/essential_data/social_media_stream.csv")
+disaster_df = pd.read_csv("data/essential_data/disaster_events.csv")
+
+# Create zone bounding boxes
+bbox_df = generate_zone_bounding_boxes(disaster_df)
+
+# Assign zones
+sensor_with_zones = assign_zones_to_df(sensor_df, bbox_df)
+tweet_with_zones = assign_zones_to_df(tweets_df, bbox_df)
+
+# Save to processed folder
+sensor_with_zones.to_csv("data/processed/sensor_with_zones.csv", index=False)
+tweet_with_zones.to_csv("data/processed/tweets_with_zones.csv", index=False)
+
+print("✅ Sensor and tweet zone assignment completed and saved.")
