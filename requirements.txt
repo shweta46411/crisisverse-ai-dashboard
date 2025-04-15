@@ -1,12 +1,25 @@
+# Core
 streamlit
 pandas
 numpy
+
+# Plotting
+matplotlib
+seaborn
 plotly
+
+# Mapping
 folium
 streamlit-folium
 geopandas
+
+# ML/AI
 scikit-learn
 transformers
-openai>=1.0.0
-transformers
 torch
+
+# OpenAI API
+openai>=1.0.0
+
+# Optional: To avoid streamlit cloud runtime errors
+scipy
